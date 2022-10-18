@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MiniQuize4_24</string>
+    <string name="new_string" translatable="false">New String</string>
+</resources>
