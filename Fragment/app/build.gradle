@@ -10,7 +10,7 @@ android {
     }
     defaultConfig {
         applicationId "com.apsy2003.fragment"
-        minSdk 16
+        minSdk 22
         targetSdk 32
         versionCode 1
         versionName "1.0"
