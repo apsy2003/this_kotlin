@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaruSamKi">
         <activity
+            android:name=".Activity_index"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_join"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_login"
+            android:exported="false" />
+        <activity
             android:name=".Activity_onboard3"
             android:exported="false" />
         <activity

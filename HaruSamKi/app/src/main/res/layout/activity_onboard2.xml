@@ -59,7 +59,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/footer"
+        android:id="@+id/footerwrap"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="@color/white"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="1.0">
 
         <Button
-            android:id="@+id/startBtn"
+            android:id="@+id/startBtn2"
             android:layout_width="330dp"
             android:layout_height="55dp"
             android:layout_gravity="center"

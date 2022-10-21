@@ -13,6 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val intent = Intent(this, Activity_onboard2::class.java)
-        binding.nextBtn.setOnClickListener{ startActivity(intent)}
+        binding.startBtn1.setOnClickListener{ startActivity(intent)}
     }
 }

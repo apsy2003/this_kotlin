@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/color1">
+    android:background="@color/white">
 
     <LinearLayout
         android:id="@+id/header"
@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:scaleType="fitXY"
-            android:src="@drawable/head" />
+            android:src="@drawable/head3" />
     </LinearLayout>
 
     <LinearLayout
@@ -40,21 +40,60 @@
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
-            app:srcCompat="@drawable/logo" />
+            android:src="@drawable/logo2" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/emailimg"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/email" />
+
+        <EditText
+            android:id="@+id/emailAddress"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="49dp"
+            android:hint="이메일주소를 입력해주세요."
+            android:inputType="textPersonName|textEmailSubject"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/lockimg"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/lock" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:hint="비밀번호를 입력해주세요."
+            android:inputType="textPassword"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
             android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/center3" />
+            android:text="로그인하기"
+            android:textSize="12dp"
+            app:backgroundTint="#AAEC4455" />
 
-        <ImageView
-            android:id="@+id/imageView3"
+        <Button
+            android:id="@+id/joinbtn"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            app:srcCompat="@drawable/text3" />
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:text="회원가입하기"
+            android:textColor="#EC4455"
+            android:textSize="12dp"
+            app:backgroundTint="@color/white"
+            app:strokeColor="#AAEC4455"
+            app:strokeWidth="1dp" />
 
     </LinearLayout>
 
@@ -72,17 +111,13 @@
         app:layout_constraintTop_toBottomOf="@+id/body"
         app:layout_constraintVertical_bias="1.0">
 
-        <Button
-            android:id="@+id/startBtn3"
-            android:layout_width="330dp"
-            android:layout_height="55dp"
-            android:layout_gravity="center"
-            android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:text="시작하기"
-            android:textColor="#EC4455"
-            app:backgroundTint="#FFFFFF"
-            app:strokeColor="#AAEC4455"
-            app:strokeWidth="2dp" />
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="429dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/foot3" />
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

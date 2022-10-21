@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="left"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|fill"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/head3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:src="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center|center_vertical"
+            android:text="하루삼끼에 오신 것을 환영합니다!"
+            android:textColor="@color/color2"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/text4" />
+
+        <Button
+            android:id="@+id/kakaobtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="10dp"
+            android:text="카카오로 간편 시작"
+            android:textColor="@color/color4"
+            android:textSize="12dp"
+            app:backgroundTint="@color/white"
+            app:strokeColor="#AAEC4455"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/naverbtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:text="네이버로 간편 시작"
+            android:textColor="@color/color4"
+            android:textSize="12dp"
+            app:backgroundTint="@color/white"
+            app:strokeColor="#AAEC4455"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/facebtn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:text="페이스북으로 간편 시작"
+            android:textColor="@color/color4"
+            android:textSize="12dp"
+            app:backgroundTint="@color/white"
+            app:strokeColor="#AAEC4455"
+            app:strokeWidth="1dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footerwrap"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/body"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="150dp"
+            android:layout_marginRight="150dp"
+            android:foregroundGravity="left"
+            app:srcCompat="@drawable/iconback" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
