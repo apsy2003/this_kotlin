@@ -16,7 +16,7 @@ class Activity_login : AppCompatActivity() {
         val intent1 = Intent(this, Activity_join::class.java)
         binding.joinbtn.setOnClickListener{ startActivity(intent1)}
 
-        val intent2 = Intent(this, Activity_index::class.java)
+        val intent2 = Intent(this, Activity_indexmain::class.java)
         binding.loginbtn.setOnClickListener{ startActivity(intent2)}
     }
 }

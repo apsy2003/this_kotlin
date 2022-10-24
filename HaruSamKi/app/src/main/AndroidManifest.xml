@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaruSamKi">
         <activity
+            android:name=".Activity_product"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_indexmain"
+            android:exported="false" />
+        <activity
             android:name=".Activity_index"
             android:exported="false" />
         <activity
