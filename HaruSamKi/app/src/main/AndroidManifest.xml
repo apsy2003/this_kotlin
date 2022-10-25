@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaruSamKi">
         <activity
+            android:name=".Activity_mypage"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_setting"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_hambuger"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Shipping"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_payment"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Community"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_review"
+            android:exported="false" />
+        <activity
             android:name=".Activity_product"
             android:exported="false" />
         <activity

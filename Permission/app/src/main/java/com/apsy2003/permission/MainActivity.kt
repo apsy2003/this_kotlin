@@ -23,7 +23,6 @@ class MainActivity : AppCompatActivity() {
                 }else{
                     finish() //미승인이면 앱종료
                 }
-
         }
 
         binding.btnCamera.setOnClickListener{
