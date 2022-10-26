@@ -4,11 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.apsy2003.harusamki.databinding.ActivityPaymentBinding
-import com.apsy2003.harusamki.databinding.ActivityReviewBinding
+
 
 class Activity_payment : AppCompatActivity() {
-    val binding by lazy{ ActivityPaymentBinding.inflate(layoutInflater)}
-
+    val binding by lazy { ActivityPaymentBinding.inflate(layoutInflater)}
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -40,6 +39,5 @@ class Activity_payment : AppCompatActivity() {
 
         val Footmenu5 = Intent(this, Activity_setting::class.java)
         binding.fmenu5.setOnClickListener{ startActivity(Footmenu5)}
-
     }
 }

@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaruSamKi">
         <activity
+            android:name=".Activity_payment"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_pay"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_purchase"
+            android:exported="false" />
+        <activity
+            android:name=".Text"
+            android:exported="false" />
+        <activity
             android:name=".Activity_mypage"
             android:exported="false" />
         <activity
@@ -20,9 +32,6 @@
             android:exported="false" />
         <activity
             android:name=".Activity_Shipping"
-            android:exported="false" />
-        <activity
-            android:name=".Activity_payment"
             android:exported="false" />
         <activity
             android:name=".Activity_Community"
