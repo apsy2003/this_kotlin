@@ -22,7 +22,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/icon_box"
+                android:id="@+id/iconBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -93,7 +93,7 @@
 
         <LinearLayout
             android:id="@+id/head4"
-            android:layout_width="49dp"
+            android:layout_width="63dp"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
@@ -106,7 +106,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView23"
+                    android:id="@+id/hamBtn"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     app:srcCompat="@drawable/ham" />
@@ -115,291 +115,298 @@
 
     </LinearLayout>
 
-
-    <LinearLayout
-        android:id="@+id/body"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/footer"
+        android:layout_height="match_parent"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header">
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:id="@+id/setting_m1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/s_icon1"
-                    android:layout_width="5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/noticeicon" />
-
-                <TextView
-                    android:id="@+id/s_Txt1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="공지사항"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/line1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/lineicon" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/setting_m2"
+            android:id="@+id/body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/s_icon2"
-                    android:layout_width="5dp"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/i_icon" />
-
-                <TextView
-                    android:id="@+id/s_Txt2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="버전정보"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <ImageView
-                android:id="@+id/line1"
+                android:id="@+id/setting_m1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/lineicon" />
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/setting_m3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/s_icon1"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/noticeicon" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/s_Txt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="공지사항"
+                        android:textSize="16sp" />
+                </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/s_icon3"
-                    android:layout_width="5dp"
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:paddingRight="5dp"
-                    app:srcCompat="@drawable/c_icon" />
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/lineicon" />
 
-                <TextView
-                    android:id="@+id/s_Txt3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="저작권"
-                    android:textSize="16sp" />
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/line1"
+            <LinearLayout
+                android:id="@+id/setting_m2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/lineicon" />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/setting_m4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/s_icon2"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/i_icon" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/s_Txt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="버전정보"
+                        android:textSize="16sp" />
+                </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/s_icon4"
-                    android:layout_width="5dp"
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:paddingRight="10dp"
-                    app:srcCompat="@drawable/a_icon" />
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/lineicon" />
 
-                <TextView
-                    android:id="@+id/s_Txt4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="알림"
-                    android:textSize="16sp" />
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/line1"
+            <LinearLayout
+                android:id="@+id/setting_m3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/lineicon" />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/setting_m5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/s_icon3"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingRight="5dp"
+                        app:srcCompat="@drawable/c_icon" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/s_Txt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="저작권"
+                        android:textSize="16sp" />
+                </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/s_icon5"
-                    android:layout_width="5dp"
+                    android:id="@+id/line3"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:paddingLeft="5dp"
-                    app:srcCompat="@drawable/lock_icon" />
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/lineicon" />
 
-                <TextView
-                    android:id="@+id/s_Txt5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="개인/보안"
-                    android:textSize="16sp" />
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/line1"
+            <LinearLayout
+                android:id="@+id/setting_m4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/lineicon" />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/setting_m6"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/s_icon4"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingRight="10dp"
+                        app:srcCompat="@drawable/a_icon" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/s_Txt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="알림"
+                        android:textSize="16sp" />
+                </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/s_icon6"
-                    android:layout_width="5dp"
+                    android:id="@+id/line4"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:paddingRight="7dp"
-                    app:srcCompat="@drawable/view_icon" />
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/lineicon" />
 
-                <TextView
-                    android:id="@+id/s_Txt6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="화면"
-                    android:textSize="16sp" />
             </LinearLayout>
 
-            <ImageView
-                android:id="@+id/line1"
+            <LinearLayout
+                android:id="@+id/setting_m5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:scaleType="fitXY"
-                app:srcCompat="@drawable/lineicon" />
+                android:orientation="vertical">
 
-        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:orientation="horizontal">
 
-        <LinearLayout
-            android:id="@+id/setting_m6"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/s_icon5"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        app:srcCompat="@drawable/lock_icon" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="78dp"
-                android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/s_Txt5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="개인/보안"
+                        android:textSize="16sp" />
+                </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/s_icon6"
-                    android:layout_width="5dp"
+                    android:id="@+id/line5"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:paddingLeft="5dp"
-                    app:srcCompat="@drawable/off_icon" />
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/lineicon" />
 
-                <TextView
-                    android:id="@+id/s_Txt6"
-                    android:layout_width="wrap_content"
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settingm6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/s_icon6"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingRight="7dp"
+                        app:srcCompat="@drawable/view_icon" />
+
+                    <TextView
+                        android:id="@+id/s_Txt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="화면"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/line6"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_weight="1"
-                    android:gravity="left"
-                    android:text="로그아웃"
-                    android:textSize="16sp" />
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/lineicon" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/settingm7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/s_icon7"
+                        android:layout_width="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:paddingLeft="5dp"
+                        app:srcCompat="@drawable/off_icon" />
+
+                    <TextView
+                        android:id="@+id/s_Txt7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="left"
+                        android:text="로그아웃"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
             </LinearLayout>
 
         </LinearLayout>
+    </ScrollView>
 
-    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/footer"
         android:layout_width="match_parent"

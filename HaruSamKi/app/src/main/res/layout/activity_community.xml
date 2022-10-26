@@ -23,7 +23,7 @@
             android:orientation="horizontal">
 
             <LinearLayout
-                android:id="@+id/icon_box"
+                android:id="@+id/iconBox"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
@@ -94,7 +94,7 @@
 
         <LinearLayout
             android:id="@+id/head4"
-            android:layout_width="49dp"
+            android:layout_width="57dp"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
@@ -107,7 +107,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/imageView23"
+                    android:id="@+id/hamBtn"
                     android:layout_width="match_parent"
                     android:layout_height="20dp"
                     app:srcCompat="@drawable/ham" />
@@ -117,7 +117,7 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/header"
+        android:id="@+id/body"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="70dp"
@@ -265,7 +265,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/fmenu22" />
+                    app:srcCompat="@drawable/fmenu2" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -299,7 +299,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="15dp"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/fmenu3" />
+                    app:srcCompat="@drawable/fmenu33" />
 
                 <TextView
                     android:id="@+id/textView3"
