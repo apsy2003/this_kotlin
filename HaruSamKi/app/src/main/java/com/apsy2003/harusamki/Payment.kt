@@ -5,15 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.apsy2003.harusamki.databinding.ActivityPaymentBinding
 
-
-class Activity_payment : AppCompatActivity() {
-    val binding by lazy { ActivityPaymentBinding.inflate(layoutInflater)}
+class Payment : AppCompatActivity() {
+    val binding by lazy{ActivityPaymentBinding.inflate(layoutInflater)}
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
         //되돌아가기 버튼
-        val Back = Intent(this, Activity_purchase::class.java)
+        /*val Back = Intent(this, Activity_purchase::class.java)
         binding.iconBox.setOnClickListener{ startActivity(Back)}
 
         //햄버거 메뉴 링크 연결
@@ -38,6 +37,6 @@ class Activity_payment : AppCompatActivity() {
         binding.fmenu4.setOnClickListener{ startActivity(Footmenu4)}
 
         val Footmenu5 = Intent(this, Activity_setting::class.java)
-        binding.fmenu5.setOnClickListener{ startActivity(Footmenu5)}
+        binding.fmenu5.setOnClickListener{ startActivity(Footmenu5)}*/
     }
 }

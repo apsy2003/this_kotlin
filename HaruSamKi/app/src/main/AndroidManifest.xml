@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaruSamKi">
         <activity
+            android:name=".Payment"
+            android:exported="false" />
+        <activity
+            android:name=".test"
+            android:exported="false" />
+        <activity
             android:name=".Activity_payment"
             android:exported="false" />
         <activity

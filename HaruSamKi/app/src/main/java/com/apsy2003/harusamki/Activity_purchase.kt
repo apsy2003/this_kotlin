@@ -20,7 +20,7 @@ class Activity_purchase : AppCompatActivity() {
         binding.head4.setOnClickListener{ startActivity(hamMenu)}
 
         //구매하기 버튼 링크 연결
-        val product = Intent(this, Activity_payment::class.java)
+        val product = Intent(this, Payment::class.java)
         binding.productBtn.setOnClickListener{ startActivity(product)}
 
         //하단 footer메뉴 링크 연결
