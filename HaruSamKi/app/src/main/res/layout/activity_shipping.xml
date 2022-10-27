@@ -93,7 +93,7 @@
 
         <LinearLayout
             android:id="@+id/head4"
-            android:layout_width="49dp"
+            android:layout_width="62dp"
             android:layout_height="match_parent"
             android:orientation="horizontal">
 

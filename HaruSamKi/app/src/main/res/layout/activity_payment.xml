@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Payment">
 
     <LinearLayout
         android:id="@+id/header"
@@ -117,22 +117,18 @@
 
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="70dp"
-        android:layout_marginBottom="100dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/footer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/header"
-        app:layout_constraintVertical_bias="0.729">
+        app:layout_constraintTop_toBottomOf="@+id/header">
 
         <LinearLayout
             android:id="@+id/body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:layout_marginBottom="100dp"
             android:orientation="vertical">>
 
@@ -140,7 +136,6 @@
                 android:id="@+id/content1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="15dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -364,7 +359,6 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.tabs.TabLayout
-                        android:id="@+id/payment"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
@@ -376,7 +370,6 @@
                             android:text="카드" />
 
                         <com.google.android.material.tabs.TabItem
-                            android:id="@+id/tabItem"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="무통장" />
@@ -426,7 +419,7 @@
                     <Button
                         android:id="@+id/paymentBtn"
                         android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="bottom"
                         android:text="결제하기"
                         app:backgroundTint="@color/color2" />

@@ -10,22 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaruSamKi">
         <activity
+            android:name=".Payment_Test"
+            android:exported="false" />
+        <activity
             android:name=".Payment"
             android:exported="false" />
         <activity
-            android:name=".test"
-            android:exported="false" />
-        <activity
-            android:name=".Activity_payment"
-            android:exported="false" />
-        <activity
-            android:name=".Activity_pay"
-            android:exported="false" />
-        <activity
             android:name=".Activity_purchase"
-            android:exported="false" />
-        <activity
-            android:name=".Text"
             android:exported="false" />
         <activity
             android:name=".Activity_mypage"
@@ -50,9 +41,6 @@
             android:exported="false" />
         <activity
             android:name=".Activity_indexmain"
-            android:exported="false" />
-        <activity
-            android:name=".Activity_index"
             android:exported="false" />
         <activity
             android:name=".Activity_join"

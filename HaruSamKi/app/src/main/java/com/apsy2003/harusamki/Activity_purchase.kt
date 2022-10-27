@@ -6,7 +6,9 @@ import android.os.Bundle
 import com.apsy2003.harusamki.databinding.ActivityPurchaseBinding
 
 class Activity_purchase : AppCompatActivity() {
-    val binding by lazy {ActivityPurchaseBinding.inflate(layoutInflater)}
+
+    val binding by lazy { ActivityPurchaseBinding.inflate(layoutInflater) }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
