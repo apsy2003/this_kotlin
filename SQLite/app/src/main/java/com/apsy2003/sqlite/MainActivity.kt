@@ -3,6 +3,7 @@ package com.apsy2003.sqlite
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+
 import com.apsy2003.sqlite.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {

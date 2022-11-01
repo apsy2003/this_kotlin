@@ -25,6 +25,10 @@ class Activity_hambuger : AppCompatActivity() {
         val Mypage = Intent(this, Activity_mypage::class.java)
         binding.mypageBtn.setOnClickListener{ startActivity(Mypage)}
 
+        //타이머 이동 링크 연결
+        val Timer = Intent(this, Activity_Timer::class.java)
+        binding.timerBtn.setOnClickListener{ startActivity(Timer)}
+
         //커뮤니티 이동 링크 연결
         val Community = Intent(this, Activity_Community::class.java)
         binding.group7.setOnClickListener{ startActivity(Community)}
