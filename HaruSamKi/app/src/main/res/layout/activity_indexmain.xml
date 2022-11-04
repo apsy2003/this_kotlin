@@ -53,11 +53,12 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <ImageView
-                    android:id="@+id/imageView22"
+                <ImageButton
+                    android:id="@+id/playBtn"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/alarm" />
+                    app:srcCompat="@drawable/playbtn" />
+
             </LinearLayout>
         </LinearLayout>
 

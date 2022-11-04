@@ -21,6 +21,10 @@ class Activity_Shipping : AppCompatActivity() {
         val hamMenu = Intent(this, Activity_hambuger::class.java)
         binding.head4.setOnClickListener{ startActivity(hamMenu)}
 
+        //지도 버튼 링크 연결
+        val Mapbutton = Intent(this, Activity_map::class.java)
+        binding.mapBtn.setOnClickListener{ startActivity(Mapbutton)}
+
         //하단 footer메뉴 링크 연결
         val Footmenu1 = Intent(this, Activity_review::class.java)
         binding.fmenu1.setOnClickListener{ startActivity(Footmenu1)}

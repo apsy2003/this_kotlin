@@ -143,7 +143,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="25dp"
-                    android:layout_marginBottom="25dp">
+                    android:layout_marginBottom="15dp">
 
                     <EditText
                         android:id="@+id/community_search"
@@ -166,11 +166,22 @@
                         android:layout_marginLeft="15dp"
                         android:text="검색"
                         app:backgroundTint="@color/color2" />
+
+                    <Button
+                        android:id="@+id/communityBtn"
+                        android:layout_width="76dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_weight="1"
+                        android:text="검색"
+                        app:backgroundTint="@color/color2" />
                 </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="419dp"
+                    android:layout_height="346dp"
+                    android:layout_marginBottom="15dp"
                     android:background="#F3F3F3"
                     android:orientation="vertical">
 
@@ -309,33 +320,15 @@
                         android:text="지번 주소 - 경기도 안양시 만안구 안양동 676-20"
                         android:textSize="11sp" />
 
-                    <TextView
-                        android:id="@+id/addressTxt15"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginEnd="15dp"
-                        android:layout_marginRight="15dp"
-                        android:background="@color/white"
-                        android:padding="5dp"
-                        android:text="도로명 주소 - 경기도 안양시 만안구 안양로 308(안양동)"
-                        android:textSize="11sp" />
-
-                    <TextView
-                        android:id="@+id/addressTxt16"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginEnd="15dp"
-                        android:layout_marginRight="15dp"
-                        android:background="@color/white"
-                        android:padding="5dp"
-                        android:text="지번 주소 - 경기도 안양시 만안구 안양동 676-98"
-                        android:textSize="11sp" />
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/mapBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_gravity="bottom"
+                    android:text="지도로 찾기"
+                    app:backgroundTint="@color/color1" />
 
                 <Button
                     android:id="@+id/AddressBtn"
@@ -343,7 +336,7 @@
                     android:layout_height="55dp"
                     android:layout_gravity="bottom"
                     android:text="등록하기"
-                    app:backgroundTint="@color/color1" />
+                    app:backgroundTint="@color/color2" />
 
             </LinearLayout>
         </ScrollView>
