@@ -22,7 +22,7 @@ class Activity_Shipping : AppCompatActivity() {
         binding.head4.setOnClickListener{ startActivity(hamMenu)}
 
         //지도 버튼 링크 연결
-        val Mapbutton = Intent(this, Activity_map::class.java)
+        val Mapbutton = Intent(this, MapsActivity::class.java)
         binding.mapBtn.setOnClickListener{ startActivity(Mapbutton)}
 
         //하단 footer메뉴 링크 연결

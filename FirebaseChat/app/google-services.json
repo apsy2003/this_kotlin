@@ -1,0 +1,83 @@
+{
+  "project_info": {
+    "project_number": "1042939140486",
+    "firebase_url": "https://calm-cascade-367500-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "calm-cascade-367500",
+    "storage_bucket": "calm-cascade-367500.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042939140486:android:b3d3e17704af8cc3a73407",
+        "android_client_info": {
+          "package_name": "com.apsy2003.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042939140486-s4n6rjmm53b4vgkl6u1st90gfq18uqll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjWWgUADRH3IW7-oJzG0Dcq6E-sCxHKLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042939140486-s4n6rjmm53b4vgkl6u1st90gfq18uqll.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1042939140486-qcqan1juqmthif8ebo8djp18c8s8mj4m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.apsy2003.firebase"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042939140486:android:a617705bfc17ab80a73407",
+        "android_client_info": {
+          "package_name": "com.apsy2003.firebasechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042939140486-s4n6rjmm53b4vgkl6u1st90gfq18uqll.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjWWgUADRH3IW7-oJzG0Dcq6E-sCxHKLA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042939140486-s4n6rjmm53b4vgkl6u1st90gfq18uqll.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1042939140486-qcqan1juqmthif8ebo8djp18c8s8mj4m.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.apsy2003.firebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,6 +1,6 @@
 package com.apsy2003.harusamki
 
-import com.apsy2003.harusamki.data.Restaurants
+import com.apsy2003.harusamki.data.Library
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -8,11 +8,11 @@ import retrofit2.http.Path
 class SeoulOpenApi {
     companion object {
         val DOMAIN = "http://openAPI.seoul.go.kr:8088/"
-        val API_KEY = "715852734461707339394957757347"
+        val API_KEY = "567657544a61736836326e76414457"
     }
 }
 
 interface SeoulOpenService {
-    @GET("{api_key}/json/SebcKoreanRestaurantsKor/1/500")
-    fun getRestaurant(@Path("api_key") key:String) : Call<Restaurants>
+    @GET("{api_key}/json/SeoulPublicLibraryInfo/1/203")
+    fun getLibrary(@Path("api_key") key:String) : Call<Library>
 }

@@ -167,15 +167,6 @@
                         android:text="검색"
                         app:backgroundTint="@color/color2" />
 
-                    <Button
-                        android:id="@+id/communityBtn"
-                        android:layout_width="76dp"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="15dp"
-                        android:layout_marginLeft="15dp"
-                        android:layout_weight="1"
-                        android:text="검색"
-                        app:backgroundTint="@color/color2" />
                 </LinearLayout>
 
                 <LinearLayout
