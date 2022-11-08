@@ -17,7 +17,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HaruSamKi"
         android:usesCleartextTraffic="true">
-
+        <activity
+            android:name=".CustomerChatRoom"
+            android:exported="false" />
+        <activity
+            android:name=".CustomerChatList"
+            android:exported="false" />
+        <activity
+            android:name=".App_login"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_Chatroom"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_Chat"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 

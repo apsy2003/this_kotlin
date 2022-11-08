@@ -1,18 +1,18 @@
-package com.apsy2003.firebasechat
+package com.apsy2003.harusamki
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.apsy2003.firebasechat.databinding.ActivityMainBinding
-import com.apsy2003.firebasechat.model.User
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
+import com.apsy2003.harusamki.databinding.ActivityAppLoginBinding
+import com.apsy2003.harusamki.model.User
 
-class MainActivity : AppCompatActivity() {
-    val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+class App_login : AppCompatActivity() {
+    val binding by lazy { ActivityAppLoginBinding.inflate(layoutInflater) }
     val database =
-        Firebase.database("https://calm-cascade-367500-default-rtdb.asia-southeast1.firebasedatabase.app/")
+        Firebase.database("https://harusamki-8f63d-default-rtdb.asia-southeast1.firebasedatabase.app/")
     val usersRef = database.getReference("users")
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,11 +40,10 @@ class MainActivity : AppCompatActivity() {
                     // 2.1 먼저 아이디가 존재 하는지 검사 후 있으면
                     if (it.exists()) {
                         Toast.makeText(
-                            baseContext,
-                            "아이디가 존재합니다.",
-                            Toast.LENGTH_LONG
-                        )
-                            .show()
+                        baseContext,
+                        "아이디가 존재합니다.",
+                        Toast.LENGTH_LONG)
+                        .show()
                     } else { // 2.2 없으면 저장후 자동 로그인
                         val user = User(id, password, name)
                         usersRef.child(id).setValue(user)
@@ -54,11 +53,10 @@ class MainActivity : AppCompatActivity() {
                 // 3. 입력 필드가 비었으면
             } else {
                 Toast.makeText(
-                    baseContext,
-                    "아이디, 비밀번호 별명을 모두 입력해야 합니다.",
-                    Toast.LENGTH_LONG
-                )
-                    .show()
+                baseContext,
+                "아이디, 비밀번호 별명을 모두 입력해야 합니다.",
+                Toast.LENGTH_LONG)
+                .show()
             }
         }
     }
@@ -90,21 +88,21 @@ class MainActivity : AppCompatActivity() {
                 }
             } else {
                 Toast.makeText(
-                    baseContext,
-                    "아이디, 비밀번호를  입력해야 합니다.",
-                    Toast.LENGTH_LONG
-                )
-                    .show()
+                baseContext,
+                "아이디, 비밀번호를  입력해야 합니다.",
+                Toast.LENGTH_LONG)
+                .show()
             }
         }
     }
 
     /* 로그인 성공 시 채팅방 목록으로 넘어가는 메서드. signin()에서 호출한 메서드를 사용하면 된다.
-    채팅방 목록에서 현재 사용자 정보가 필요하기 때문에 putExtra로 아이디와 이름을 전달한다. */
+    채팅방 목록에서 현재 사용자 정보가 필요하기 때문에 putExtra로 아이디와 이름을 전달한다. CustomerChatList*/
     fun goChatroomList(userId: String, userName: String) {
-        val intent = Intent(this, ChatListActivity::class.java)
+        val intent = Intent(this, Activity_indexmain::class.java)
         intent.putExtra("userId", userId)
         intent.putExtra("userName", userName)
         startActivity(intent)
     }
 }
+

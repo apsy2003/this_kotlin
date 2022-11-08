@@ -15,7 +15,7 @@ class Activity_onboard3 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        val intent = Intent(this, Activity_login::class.java)
+        val intent = Intent(this, App_login::class.java)
         binding.startBtn3.setOnClickListener{ startActivity(intent)}
     }
 }

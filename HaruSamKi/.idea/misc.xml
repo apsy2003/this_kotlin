@@ -4,7 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/drawable/stroke.xml" value="0.3425" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_app_login.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_community.xml" value="0.5" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_customer_chat.xml" value="0.25" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_customer_chat_list.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_customer_chat_room.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_customer_chatlist.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_customer_chatroom.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_customer_login.xml" value="0.33" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_hambuger.xml" value="0.33" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_index.xml" value="0.33" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_index2.xml" value="0.3642487046632124" />
@@ -33,6 +40,7 @@
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/fragment__one.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/fragment__tree.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/fragment__two.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/item_msg_list.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/item_musicrecycler.xml" value="0.3932291666666667" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/item_recycler.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/payment.xml" value="0.18229166666666666" />

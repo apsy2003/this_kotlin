@@ -33,6 +33,10 @@ class Activity_hambuger : AppCompatActivity() {
         val Community = Intent(this, Activity_Community::class.java)
         binding.group7.setOnClickListener{ startActivity(Community)}
 
+        //1:1 고객상담
+        val Customer = Intent(this, CustomerChatList::class.java)
+        binding.group2.setOnClickListener{startActivity(Customer)}
+
 
     }
 }

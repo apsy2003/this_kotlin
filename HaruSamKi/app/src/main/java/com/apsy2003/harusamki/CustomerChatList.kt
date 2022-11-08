@@ -1,4 +1,4 @@
-package com.apsy2003.firebasechat
+package com.apsy2003.harusamki
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -11,18 +11,18 @@ import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.apsy2003.firebasechat.databinding.ActivityChatListBinding
-import com.apsy2003.firebasechat.model.Room
+import com.apsy2003.harusamki.databinding.ActivityCustomerChatListBinding
+import com.apsy2003.harusamki.model.Room
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
-class ChatListActivity : AppCompatActivity() {
+class CustomerChatList : AppCompatActivity() {
     //다음과 같이 binding를 생성한다.
-    val binding by lazy { ActivityChatListBinding.inflate(layoutInflater)}
-    val database = Firebase.database("https://calm-cascade-367500-default-rtdb.asia-southeast1.firebasedatabase.app/")
+    val binding by lazy { ActivityCustomerChatListBinding.inflate(layoutInflater)}
+    val database = Firebase.database("https://harusamki-8f63d-default-rtdb.asia-southeast1.firebasedatabase.app/")
     //database와 rooms 노드를 연결한다.
     val roomsRef = database.getReference("rooms")
     //로그인한 사용자 정보를 다른 액티비티에서 사용할 수 있도록 companion object로 생성
@@ -101,13 +101,13 @@ class ChatListActivity : AppCompatActivity() {
 class ChatRoomListAdapter(val roomList:MutableList<Room>)
     : RecyclerView.Adapter<ChatRoomListAdapter.Holder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ChatRoomListAdapter.Holder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
         val view = LayoutInflater.from(parent.context)
             .inflate(android.R.layout.simple_list_item_1, parent, false)
-            return Holder(view)
+        return Holder(view)
     }
 
-    override fun onBindViewHolder(holder: ChatRoomListAdapter.Holder, position: Int) {
+    override fun onBindViewHolder(holder: Holder, position: Int) {
         val room = roomList.get(position)
         holder.setRoom(room)
     }
@@ -117,10 +117,10 @@ class ChatRoomListAdapter(val roomList:MutableList<Room>)
     }
 
     class Holder(itemView: View): RecyclerView.ViewHolder(itemView){
-        lateinit var mRoom:Room
+        lateinit var mRoom: Room
         init{
             itemView.setOnClickListener{
-                val intent = Intent(itemView.context, ChatRoomActivity::class.java)
+                val intent = Intent(itemView.context, CustomerChatRoom::class.java)
                 intent.putExtra("roomId", mRoom.id)
                 intent.putExtra("roomTitle", mRoom.title)
                 itemView.context.startActivity(intent)

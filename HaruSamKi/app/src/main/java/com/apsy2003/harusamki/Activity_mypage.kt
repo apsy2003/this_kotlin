@@ -25,6 +25,10 @@ class Activity_mypage : AppCompatActivity() {
         val ComList = Intent(this, Activity_Community::class.java)
         binding.communityList.setOnClickListener{ startActivity(ComList)}
 
+        //1:1 고객상담
+        val Customer = Intent(this, CustomerChatList::class.java)
+        binding.settingm4.setOnClickListener{startActivity(Customer)}
+
         //하단 footer메뉴 링크 연결
         val Footmenu1 = Intent(this, Activity_review::class.java)
         binding.fmenu1.setOnClickListener{ startActivity(Footmenu1)}
