@@ -1,6 +1,5 @@
 package com.apsy2003.harusamki
 
-import android.app.Notification
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater

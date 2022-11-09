@@ -19,18 +19,13 @@
         android:usesCleartextTraffic="true">
         <activity
             android:name=".CustomerChatRoom"
-            android:exported="false" />
+            android:exported="false"
+            android:windowSoftInputMode="adjustNothing" />
         <activity
             android:name=".CustomerChatList"
             android:exported="false" />
         <activity
             android:name=".App_login"
-            android:exported="false" />
-        <activity
-            android:name=".Customer_Chatroom"
-            android:exported="false" />
-        <activity
-            android:name=".Customer_Chat"
             android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -45,7 +40,7 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="YOUR_API_KEY" />
+            android:value="AIzaSyD2BjHamYTteY5BFdmZ5Kh-Rf7hS00WaOA" />
 
         <activity
             android:name=".MapsActivity"
