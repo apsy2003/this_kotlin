@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "96695140474",
+    "firebase_url": "https://harusamki-8f63d-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "harusamki-8f63d",
+    "storage_bucket": "harusamki-8f63d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96695140474:android:520724e736ebcd4ffd3bc3",
+        "android_client_info": {
+          "package_name": "com.apsy2003.firebasestorage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96695140474-ffq9gng1oghltbes0p58et96k66r5r2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBphDkuerUcBp3z_Xkfq6OD4VcS-ZP3tq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96695140474-ffq9gng1oghltbes0p58et96k66r5r2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96695140474:android:49e0263db8316438fd3bc3",
+        "android_client_info": {
+          "package_name": "com.apsy2003.harusamki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96695140474-ffq9gng1oghltbes0p58et96k66r5r2s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBphDkuerUcBp3z_Xkfq6OD4VcS-ZP3tq8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96695140474-ffq9gng1oghltbes0p58et96k66r5r2s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
