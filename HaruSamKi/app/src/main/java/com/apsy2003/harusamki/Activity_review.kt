@@ -6,12 +6,23 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Environment
+import android.view.View
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.FileProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.room.Room
 import com.apsy2003.harusamki.databinding.ActivityReviewBinding
+import androidx.room.Room.databaseBuilder
+import com.apsy2003.room.RecyclerAdapter
+import com.apsy2003.room.RoomHelper
+import com.apsy2003.room.RoomMemo
 import java.io.File
+
+
+
+
 
 class Activity_review : AppCompatActivity() {
         var photoUri: Uri? = null
@@ -22,10 +33,47 @@ class Activity_review : AppCompatActivity() {
         lateinit var galleryLauncher: ActivityResultLauncher<String>
 
         val binding by lazy{ ActivityReviewBinding.inflate(layoutInflater)}
+        var helper : RoomHelper? = null
+        var updateMemo: RoomMemo? = null
 
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(binding.root)
+
+            helper = Room.databaseBuilder(this, RoomHelper::class.java, "room_memo")
+                .allowMainThreadQueries().build()
+
+            val adapter = RecyclerAdapter()
+            adapter.helper = helper
+
+            adapter.listData.addAll(helper?.roomMemoDao()?.getAll()?: listOf())
+            //수정을 위해 메인액티비티 연결
+            adapter.Activity_review = this
+            //화면의 리사이클러뷰 위젯에 adapter를 연결하고 레이아웃 매니저를 설정
+            binding.recyclerMemo.adapter = adapter
+            binding.recyclerMemo.layoutManager = LinearLayoutManager(this)
+
+            binding.buttonSave.setOnClickListener {
+                //수정 체크 추가
+                if(updateMemo != null){
+                    updateMemo?.content = binding.editMemo.text.toString()
+                    helper?.roomMemoDao()?.update(updateMemo!!)
+                    refreshAdapter(adapter)
+                    cancelUpdate()
+                }else if(binding.editMemo.text.toString().isNotEmpty()){
+                    val memo = RoomMemo(binding.editMemo.text.toString(), System
+                        .currentTimeMillis())
+                    helper?.roomMemoDao()?.insert(memo)
+
+                    adapter.listData.clear()
+                    adapter.listData.addAll(helper?.roomMemoDao()?.getAll()?: listOf())
+                    adapter.notifyDataSetChanged()
+                    binding.editMemo.setText("")
+                }
+            }
+            binding.buttonCanel.setOnClickListener{
+                cancelUpdate()
+            }
 
             storagePermission = registerForActivityResult(
                 ActivityResultContracts
@@ -85,6 +133,27 @@ class Activity_review : AppCompatActivity() {
 
             val Footmenu5 = Intent(this, Activity_setting::class.java)
             binding.fmenu5.setOnClickListener{ startActivity(Footmenu5)}
+        }
+
+        fun setUpdate(memo:RoomMemo){
+            updateMemo = memo
+            binding.editMemo.setText(updateMemo!!.content)
+            binding.buttonCanel.visibility = View.VISIBLE
+            binding.buttonSave.text ="수정"
+        }
+
+        fun cancelUpdate(){
+            updateMemo = null
+
+            binding.editMemo.setText("")
+            binding.buttonCanel.visibility = View.GONE
+            binding.buttonSave.text ="저장"
+        }
+
+        fun refreshAdapter(adapter:RecyclerAdapter){
+            adapter.listData.clear()
+            adapter.listData.addAll(helper?.roomMemoDao()?.getAll() ?: mutableListOf())
+            adapter.notifyDataSetChanged()
         }
 
         fun setViews() {
