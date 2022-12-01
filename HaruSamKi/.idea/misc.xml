@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/drawable/stroke.xml" value="0.3425" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_add_todo.xml" value="0.22604166666666667" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_app_login.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_community.xml" value="0.5" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_customer_chat.xml" value="0.25" />
@@ -12,7 +13,7 @@
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_customer_chatlist.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_customer_chatroom.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_customer_login.xml" value="0.33" />
-        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_hambuger.xml" value="0.33" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_hambuger.xml" value="0.5" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_index.xml" value="0.33" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_index2.xml" value="0.3642487046632124" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_indexmain.xml" value="0.33" />
@@ -21,6 +22,7 @@
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_map.xml" value="0.16" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_map2.xml" value="0.11770833333333333" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_maps.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_mypage.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_onboard2.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_onboard3.xml" value="0.35833333333333334" />
@@ -31,18 +33,22 @@
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_product.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_product2.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_purchase.xml" value="0.25" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_qrmain.xml" value="0.22604166666666667" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_result.xml" value="0.22604166666666667" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_review.xml" value="0.22" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_setting.xml" value="0.33" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_shipping.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_test.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_text.xml" value="0.35833333333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_timer.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/activity_to_do_main.xml" value="0.22604166666666667" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/fragment__one.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/fragment__tree.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/fragment__two.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/item_msg_list.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/item_musicrecycler.xml" value="0.3932291666666667" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/item_recycler.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/item_todo.xml" value="0.22604166666666667" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/payment.xml" value="0.18229166666666666" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/layout/stroke.xml" value="0.3515625" />
         <entry key="..\:/Users/GR803/AndroidStudioProjects/HaruSamKi/app/src/main/res/xml/file_paths.xml" value="0.36614583333333334" />

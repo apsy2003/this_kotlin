@@ -14,4 +14,9 @@
     <color name="color4">#555555</color>
     <color name="color5">#FFECECEC</color>
 
+    <!--아래 세 색상을 추가해 준다.-->
+    <color name="red">#B30000</color>
+    <color name="yellow">#FFBF00</color>
+    <color name="green">#698C00</color>
+
 </resources>

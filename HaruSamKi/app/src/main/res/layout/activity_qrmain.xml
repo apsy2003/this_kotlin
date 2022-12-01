@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/barcode_preview"
+        android:layout_width="365dp"
+        android:layout_height="631dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.camera.view.PreviewView>
+
+    <LinearLayout
+        android:id="@+id/footerwrap"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/color1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/barcode_preview"
+        app:layout_constraintVertical_bias="0.977"
+        tools:layout_editor_absoluteX="1dp">
+
+        <ImageView
+            android:id="@+id/Timerback"
+            android:layout_width="66dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="3dp"
+            app:srcCompat="@drawable/iconback" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

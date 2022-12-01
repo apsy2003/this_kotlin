@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="735dp">
+
+    <TextView
+        android:id="@+id/tv_importance"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:text="2"
+        android:textColor="@color/white"
+        android:textSize="19sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="323dp"
+        android:layout_height="wrap_content"
+        android:text="GO TO GYM"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

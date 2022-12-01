@@ -18,6 +18,10 @@ class Activity_indexmain : AppCompatActivity() {
         val Logo = Intent(this, Activity_indexmain::class.java)
         binding.logobox.setOnClickListener{ startActivity(Logo)}
 
+        //QR코드 메뉴 링크 연결
+        val QRBtn = Intent(this, Activity_QRMain::class.java)
+        binding.QRBtn.setOnClickListener{ startActivity(QRBtn)}
+
         //플레이 리스트 메뉴 링크 연결
         val PlayBtn = Intent(this, Activity_Playlist::class.java)
         binding.playBtn.setOnClickListener{ startActivity(PlayBtn)}
